@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);
+}
+
+/* LOGIN */
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {
+    background: linear-gradient(90deg, #5D54A4, #7C78B8);
+    position: relative;
+    width: 702px;
+    box-shadow: 0px 0px 24px #5c5696;
+    padding: 57px;
+}
+
+
+.screen a {
+	text-decoration: none;
+	color: white;
+	line-height: 50px;
+}
+
+.screen a:hover {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+
+
+/* TABLA */
+.tabla {
+	border-collapse: collapse;
+	box-shadow: 0px 0px 10px white;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.tabla td,
+.tabla th {
+	border: 1px solid rgb(176 176 176);
+	padding: 8px;
+}
+
+.tabla tr:nth-child(even) {
+	background-color: #f2f2f2;
+	transition: all 200ms;
+}
+
+.tabla tr:nth-child(odd) {
+	background-color: #d4ccff;
+	transition: all 300ms;
+}
+
+.tabla tr:hover {
+	background-color: #7ec0e7;
+}
+
+.tabla th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #2b77a3;
+	color: white;
+}
+
+h1 {
+	margin-bottom: 30px;
+}

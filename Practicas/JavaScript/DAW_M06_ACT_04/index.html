@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="actividad04.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>DAW_M06_ACT_04_DanielAguilar</title>
+</head>
+<body id="body">
+    
+    <div class="container">
+        <table>
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>COLOR</th>
+                    <th>ACCION</th>
+                </tr>  
+                <tr>
+                    <td><input type="text" placeholder="Nombre"></td>
+                    <td><input type="color" placeholder="Color"></td>
+                    <td><button onclick="addPart();" class="fill">AÑADE PARTICIPANTE</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="finishComp();" class="fill">FINALIZA COMPETICIÓN</button></td>
+                </tr>
+                <tr>
+                    <th colspan="2">POSICIÓN</td>
+                    <th>ACCIÓN</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><select id=delParticipantes></select></td>
+                    <td><button onclick="delPart();" class="fill">BORRA PARTICIPANTE</button></td>
+                </tr>
+                <tr>
+                    <th colspan="2">POSICIÓN FINAL</td>
+                    <th>ACCIÓN</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><select id="delParticipantesPosFin"></select></td>
+                    <td><button onclick="movPart();" class="fill">MUEVE PARTICIPANTE</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="modifyPart();" class="fill">MODIFICAR PARTICIPANTE</button></td>
+                </tr>
+        </table>
+    </div>
+
+    <div class="participantes">
+        <h1 style="color:white; text-align: center;">PARTICIPANTES</h1>
+        <ol class="lista">
+
+        </ol>
+
+    </div>
+
+</body>
+</html>

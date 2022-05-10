@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="actividad03.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>DAW_M06_ACT_03_DanielAguilar</title>
+</head>
+
+<body>
+    <div style="position: relative; float: left;">
+        <!-- Tabla de extras -->
+        <table id="extras_disponibles" class="styled-table">
+            <tr>
+                <th colspan="3">EXTRAS DISPONIBLES</th>
+            </tr>
+            <tr>
+                <th>NOMBRE</th>
+                <th>IMAGEN</th>
+                <th>PRECIO</th>
+            </tr>
+        </table>
+        <!-- Tabla para añadir y borrar extras -->
+        <table class="styled-table">
+            <tr>
+                <th colspan="3">AÑADIR NUEVO EXTRA</th>
+            </tr>
+            <tr>
+                <th>PRECIO</th>
+                <th>EXTRA</th>
+                <th>OPCION</th>
+            </tr>
+            <tr>
+                <td><input id="inputPrecioExtra" type="number" placeholder="precio" /></td>
+                <td><select id="selectExtra">
+                        <option>Acelerador</option>
+                        <option>Refrigerante</option>
+                        <option>CompresorZX19</option>
+                        <option>Cabina</option>
+                    </select></td>
+                <td><button class="button-29" role="button" onclick="botonExtras();">ADD EXTRA</button></td>
+            </tr>
+            <tr>
+                <th colspan="3">BORRAR UN EXTRA</th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input id="inputBorrarExtra" type="number"
+                        placeholder="Introduce la posición" /></td>
+                <td style="text-align: center;"><button class="button-29" role="button"
+                        onclick="botonBorrarExtras();">BORRAR</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="position: relative; float:right">
+        <!-- Tabla de vehiculos -->
+        <table id="vehiculos_disponibles" class="styled-table">
+            <tr>
+                <th colspan="4">VEHICULOS DISPONIBLES</th>
+            </tr>
+            <tr>
+                <th>NOMBRE</th>
+                <th>VELOCIDAD</th>
+                <th colspan="2">EXTRAS</th>
+            </tr>
+        </table>
+        <!-- Tabla para añadir nuevos vehiculos -->
+        <table class="styled-table">
+            <tr>
+                <th colspan="3">AÑADIR NUEVO VEHÍCULO</th>
+            </tr>
+            <tr>
+                <th>NOMBRE</th>
+                <th>VELOCIDAD</th>
+                <th>OPCIÓN</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="inputNomVeh" placeholder="nombre"></td>
+                <td><input type="number" id="inputVeloVeh"> Años luz</td>
+                <td><button class="button-29" role="button" onclick="botonVehiculos()">ADD VEHICULO</button></td>
+            </tr>
+        </table>
+        <!-- Tabla para añadir extras a los vehiculos -->
+        <table class="styled-table">
+            <tr>
+                <th colspan="3">AÑADIR NUEVOS EXTRAS A VEHICULOS</th>
+            </tr>
+            <tr>
+                <th>EXTRA</th>
+                <th>NOMBRE COCHE</th>
+                <th>OPCIÓN</th>
+            </tr>
+            <tr>
+                <td><select id="extraVehAdd">
+                    </select> </td>
+                <td><select id="nomVehAdd">
+                    </select></td>
+                <td><button class="button-29" role="button" onclick="addExtraCoche()">ADD EXTRA COCHE</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

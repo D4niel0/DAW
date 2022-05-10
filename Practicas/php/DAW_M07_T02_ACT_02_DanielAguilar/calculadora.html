@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="resultado.php" method="post">
+      <div class="user-box">
+        <input type="text" name="num1" required="">
+        <label>Número 1</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="num2" required="">
+        <label>Número 2</label>
+      </div>
+      <div class="text-radio">
+        <input type="radio" name="operacion" value="suma">
+        <label>Suma</label>
+      </div>
+      <div class="text-radio">
+        <input type="radio" name="operacion" value="resta">
+        <label>Resta</label>
+      </div>
+      <div class="text-radio">
+        <input type="radio" name="operacion" value="multi">
+        <label>Multiplicación</label>
+      </div>
+      <div class="text-radio">
+        <input type="radio" name="operacion" value="divi">
+        <label>División</label>
+      </div>
+
+      <input type="submit" value="Enviar">
+      <a class="volver" href="index.php">Volver al index</a>
+    </form>
+  </div>
+</body>
+
+</html>

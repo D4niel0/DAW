@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="seleccionaMenu.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <h1 id="titulo">DEPURAR EL CODIGO JAVASCRIPT </h1>
+    <section>
+        <h2> CÓDIGO MAL ESCRITO</h2>
+        <p>El tag script permite añadir código JS. Con la consola del inspector de código del
+            Navegador depuramos los errores. <br />
+            El error: "document.writ is not a function" indica que "document.writ" no es un nombre de función
+            reconocible por JS. Seguramente esté mal escrito.
+        </p>
+        <script>
+            document.write("<b>document.write</b> nos permite escribir texto o tags HTML");
+            document.write("<br />");
+            document.write("pero solo lo podemos ejecutar al cargar la web. ");
+            document.write("Si lo utilizamos una vez cargada la web, se borrará todo el contenido HTML");
+
+        </script>
+    </section>
+    <section>
+        <h2>ORDEN DEL JS</h2>
+        <p>
+            Si código JS accede a un elemento HTML,
+            es importate que al ejecutar el JS ya se haya cargado el HTML.
+        </p>
+
+        
+
+        <p id="ordenCorrecto"></p>
+        <script src="modificarHTML.js"></script>
+
+
+    </section>
+    <section>
+        <h2>CASE SENITIVE</h2>
+        <!-- al clicar sobre un DIV llamamos a la función "saluda()" -->
+        <p>JS tiene en cuenta mayusculas y minusculas. Si no encuentra una función, tenemos que
+            asegurarnos que esté bien escrita. <br />
+            Modificamos el contenido de un input accediendo primero por su ID y
+            luego modificando el contenido modificando la propiedad "innerHTML"
+            (El id ha de ser el correcto. Cuidado las mayusculas!)
+        </p>
+
+        <button onclick="saluda('Cuidado con las mayúsculas');">SALUDA</button>
+        <div id="mensa"></div>
+
+    </section>
+    <section>
+        <h2>MENU JAVASCRIPT</h2>
+        <p>
+            Pedimos un dato al usuario con la funcion "window.prompt()" (No confundir con windowS !) <br />
+            Modificamos el contenido de un input con la propiedad "value" .
+            (No confundir con innerHTML o nodeValue)
+        </p>
+
+        <h4 id="seleccionaPrimero" onclick="seleccionaPrimero()">CLICK PARA SELECCIONAR EL PRIMERO</h4>
+        <input id="primero" />
+    </section>
+
+
+
+    <section>
+        <!-- Pregunta 2-->
+        <!-- añadimos el evento onclick-->
+        <h4>Indica tu nombre</h4>
+        <p>2. Programa que al clicar sobre el botón con el texto “Guarda el nombre”, extraiga el valor escrito dentro el
+            INPUT con id “inputNombre” y lo muestre en el DIV con id “tuNombre”.</p>
+        <input id="inputNombre" />
+        <button onclick="guardaElNombre()">Guarda el nombre</button>
+        <!--A clicar en el botón muestra aquí el nombre escrito en #inputNombre-->
+        <div id="tuNombre">
+
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

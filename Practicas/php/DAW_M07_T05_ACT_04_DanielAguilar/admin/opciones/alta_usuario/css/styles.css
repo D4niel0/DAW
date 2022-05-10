@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+}
+
+/* LOGIN */
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {
+    background: linear-gradient(90deg, #5D54A4, #7C78B8);
+    position: relative;
+    height: 288px;
+    width: 360px;
+    box-shadow: 0px 0px 24px #5C5696;
+    padding: 57px;
+}
+
+form {
+    line-height: 25px;
+}
+
+form label {
+	padding: 10px;
+
+}
+
+.screen a {
+    text-decoration: none;
+	color: white;
+	line-height: 50px;
+}
+
+.screen a:hover {
+    text-decoration: none;
+	color: black;	
+	font-weight: bold;
+}
+
+input[type="submit"] {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    background-color: azure;
+    border: 2px solid black;
+    box-shadow: 0px 0px 1px white;
+	transition: all 200ms;
+	margin-top: 20px;
+	
+}
+
+input[type="submit"]:hover {
+	background-color: rgba(240, 255, 255, 0.589);
+    box-shadow: 0px 0px 3px white;	
+}
+
+input[type="text"] {
+    width: 157px;
+	height: 20px;
+    padding-left: 9px;
+    padding-right: 9px;
+	border-radius: 3px;
+	border: none;
+	color: rgb(99, 99, 99);
+	transition: all 200ms;
+}
+
+input[type="text"]:focus {
+	color: black;
+}

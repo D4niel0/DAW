@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="actividad05.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>DAW_M06_ACT_05_DanielAguilar</title>
+</head>
+<body>
+    <div class="login-box">
+        <h2>BIENVENIDO</h2>
+        <form action="registrado.html" name="formTienda">
+        Nombre Producto: <input type="text" name="inputNombre" class="inputNormales" /><br>
+        Código de Barras: <input type="text" name="inputCodigo" class="inputNormales"/><br>
+        Caducidad: Dia <input type="number" name="inputDia" class="inputFechas"/> 
+                   Mes <input type="number" name="inputMes" class="inputFechas"/> 
+                   Año <input type="number" name="inputAno" class="inputFechas"/><br>
+        Oferta:
+        <select name="ofertas" class="select-css">
+            <option>Normal</option>
+            <option>2x1</option>
+            <option>20%</option>
+            <option>10%</option>
+        </select><br>
+        <input type="checkbox" id="congelado" name="alimento" value="congelado">
+            <label for="congelado">Congelado</label>
+        <input type="checkbox" id="fruta" name="alimento" value="fruta">
+            <label for="fruta">Fruta</label>
+        <input type="checkbox" id="snack" name="alimento" value="snack">
+            <label for="snack">Snack</label><br>
+        <button type="submit" name="registrate" id="registrate" class="noselect">Regístrate</button>
+        <button type="reset" name="reset" id="limpiar" class="noselect">Limpia el formulario</button>
+        <button type="button" name="guardar" class="noselect">Guardar datos</button>
+        <button type="button" name="recuperar" class="noselect">Recuperar Datos</button><br>
+        <textarea name="textoInfo" rows="4" id="textAreaCont"></textarea>
+            
+
+
+
+        </form>
+  
+    </div>
+</body>
+</html>
